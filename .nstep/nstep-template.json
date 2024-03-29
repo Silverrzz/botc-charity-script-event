@@ -1,0 +1,159 @@
+{
+    "STEPS": [
+        "SRC",
+        "BUILD"
+    ],
+    "SOURCE_STEP": "SRC",
+    "GIT": {
+        "enabled": "true",
+        "branch": "main",
+        "remote": "origin",
+        "repository": "git@github.com:Silverrzz/botc-charity-script-event.git"
+    },
+    "SRC": {
+        "REMOTE": {
+            "ssh_enabled": "false",
+            "host": "",
+            "port": 22,
+            "user": "",
+            "pass": ""
+        },
+        "DIR": "SRC",
+        "SOURCE": "SRC",
+        "STRUC": [
+            {
+                "assets": {
+                    "STRUC": [
+                        {
+                            "css": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "sass": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "widgets": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "js": {
+                                "STRUC": [
+                                    {
+                                        "model": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "dlg": {
+                                            "STRUC": []
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "images": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "fonts": {
+                                "STRUC": []
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "pages": {
+                    "STRUC": []
+                }
+            },
+            {
+                "admin": {
+                    "STRUC": []
+                }
+            }
+        ],
+        "BUILD": "false",
+        "VOLATILE": "false",
+        "WATCH": "nstep construct BUILD"
+    },
+    "BUILD": {
+        "REMOTE": {
+            "ssh_enabled": "false",
+            "host": "",
+            "port": 22,
+            "user": "",
+            "pass": ""
+        },
+        "DIR": "C:/xampp/htdocs",
+        "SOURCE": "SRC",
+        "STRUC": [
+            {
+                "pages": {
+                    "STRUC": []
+                }
+            },
+            {
+                "assets": {
+                    "STRUC": [
+                        {
+                            "css": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "sass": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "widgets": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "js": {
+                                "STRUC": [
+                                    {
+                                        "dlg": {
+                                            "STRUC": []
+                                        }
+                                    },
+                                    {
+                                        "model": {
+                                            "STRUC": []
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "images": {
+                                "STRUC": []
+                            }
+                        },
+                        {
+                            "fonts": {
+                                "STRUC": []
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "admin": {
+                    "STRUC": []
+                }
+            }
+        ],
+        "BUILD": "true",
+        "VOLATILE": "true",
+        "WATCH": "false"
+    }
+}

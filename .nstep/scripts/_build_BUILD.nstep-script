@@ -1,0 +1,3 @@
+RUN{1-SOURCE,2-DESTINATION,3-SRC_NAME,4-DST_NAME}:
+CMD >> sass $SOURCE/assets/sass/style.scss:$SOURCE/assets/css/style.css --no-source-map --style=compressed,
+COPY >> $SOURCE/* >> $DESTINATION/#/*;

@@ -1,0 +1,8 @@
+{
+    "BUILD": {
+        "host": "http://localhost:80/",
+        "protocol": "http",
+        "domain": "localhost",
+        "port": 80
+    }
+}

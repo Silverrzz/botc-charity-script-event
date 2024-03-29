@@ -1,0 +1,31 @@
+RewriteEngine On
+
+# Redirect requests to /phpMyAdmin to /phpMyAdmin/index.php
+RewriteRule ^phpMyAdmin phpMyAdmin/index.php [L]
+
+# Redirect requests to /assets/* to /assets/*
+RewriteRule ^assets/(.*)$ assets/$1 [L]
+
+# Redirect requests to /ajax to admin/ajax.php
+RewriteRule ^ajax admin/ajax.php [L]
+
+# Redirect requests to /image/* to admin/image.php
+RewriteRule ^image admin/image.php [L]
+
+# Redirect requests to /save/* to admin/save.php
+RewriteRule ^save admin/save.php [L]
+
+# Redirect requests to /run/* to admin/run.php
+RewriteRule ^run admin/run.php [L]
+
+# Redirect requests to /json/* to admin/json.php
+RewriteRule ^json admin/json.php [L]
+
+# Redirect requests to /jinx to admin/jinx.json
+RewriteRule ^jinx admin/jinx.json [L]
+
+RewriteCond %{REQUEST_URI} !^/assets
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [L]
