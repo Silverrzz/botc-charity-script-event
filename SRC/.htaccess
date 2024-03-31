@@ -1,7 +1,10 @@
 RewriteEngine On
 
-# Redirect requests to /phpMyAdmin to /phpMyAdmin/index.php
-RewriteRule ^phpMyAdmin phpMyAdmin/index.php [L]
+# Redirect requests to /discord/process to admin/dc-process.php
+RewriteRule ^discord/process admin/dc-process.php [L]
+
+# Redirect requests to /discord/link to admin/dc-init.php
+RewriteRule ^discord/link admin/dc-init.php [L]
 
 # Redirect requests to /assets/* to /assets/*
 RewriteRule ^assets/(.*)$ assets/$1 [L]

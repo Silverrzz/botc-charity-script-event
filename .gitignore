@@ -1,1 +1,3 @@
 SRC/admin/database.php
+SRC/admin/dc-init.php
+SRC/admin/dc-process.php
